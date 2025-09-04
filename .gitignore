@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg
+*.eggs
+*.env
+.env*
+*.venv
+venv/
+ENV/
+env/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Test output
+htmlcov/
+.coverage
+.tox/
+
+# Misc
+*.sqlite3
+*.db
+*.bak
+*.swp
+*.swo
+
+# Node
+node_modules/
+
+# Ignore environment and secrets
+.env
+.env.*
+*.secret
+*.key
+*.pem
+
+# Ignore notebooks output
+*.nbconvert.ipynb
+
+# Ignore compiled files
+*.so
+*.dll
+*.exe
+*.out
+*.class
+
+# Ignore package files
+*.tar.gz
+*.whl
+*.zip
+
+# Ignore temporary files
+~$*
+*.tmp
+*.temp
