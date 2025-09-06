@@ -4,21 +4,38 @@ Welcome to LangGraph for Beginners! This repository contains code samples and Ju
 
 ## Structure
 
-- `notebook/` — Contains Jupyter notebooks for hands-on exercises and starter samples.
-    - `01_Notebook_FirstChatBot.ipynb` — (Under development) Example notebook for building your first chatbot.
+- `notebooks/` — Contains Jupyter notebooks for hands-on exercises and starter samples.
+    - `01_Notebook_FirstChatBot copy.ipynb` — Example notebook for building your first chatbot with LangGraph.
+    - `02_Notebook_MultipleBot copy.ipynb` — Example notebook demonstrating multiple operations and state management.
+    - `03_Notebook_ConditionalEdge.ipynb` — Example notebook showing conditional edges and complex workflows.
 
 ## Getting Started
 
 1. Clone this repository.
 2. Install Python 3.8+ and Jupyter.
-3. (Optional) Create a virtual environment and install required packages.
-4. Open the notebooks in Jupyter and follow the instructions.
+3. Create a virtual environment and activate it:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+4. Install required packages:
+   ```bash
+   pip install langgraph langchain-openai python-dotenv jupyter
+   ```
+5. Create a `.env` file in the project root and add your OpenAI API key:
+   ```
+   OPENAI_API_KEY=your_api_key_here
+   ```
+6. Open the notebooks in Jupyter and follow the instructions.
 
 ## Requirements
 
 - Python 3.8 or higher
 - Jupyter Notebook or JupyterLab
-- (Recommended) LangGraph, OpenAI, and other LLM-related packages
+- LangGraph
+- LangChain OpenAI
+- OpenAI API key (for ChatGPT integration)
+- python-dotenv (for environment variables)
 
 ## Status
 
@@ -39,21 +56,38 @@ See the `LICENSE` file for details.
 
 ## ساختار
 
-- `notebook/` — شامل نوت‌بوک‌های Jupyter برای تمرین‌های عملی و نمونه‌های مقدماتی است.
-    - `01_Notebook_FirstChatBot.ipynb` — (در حال توسعه) نوت‌بوک نمونه برای ساخت اولین چت‌بات شما.
+- `notebooks/` — شامل نوت‌بوک‌های Jupyter برای تمرین‌های عملی و نمونه‌های مقدماتی است.
+    - `01_Notebook_FirstChatBot copy.ipynb` — نوت‌بوک نمونه برای ساخت اولین چت‌بات شما با LangGraph.
+    - `02_Notebook_MultipleBot copy.ipynb` — نوت‌بوک نمونه برای نشان دادن عملیات‌های چندگانه و مدیریت وضعیت.
+    - `03_Notebook_ConditionalEdge.ipynb` — نوت‌بوک نمونه برای نشان دادن یال‌های شرطی و جریان‌های کاری پیچیده.
 
 ## شروع کار
 
 1. این مخزن را کلون کنید.
 2. پایتون ۳.۸ یا بالاتر و Jupyter را نصب کنید.
-3. (اختیاری) یک محیط مجازی بسازید و بسته‌های مورد نیاز را نصب کنید.
-4. نوت‌بوک‌ها را در Jupyter باز کنید و دستورالعمل‌ها را دنبال کنید.
+3. یک محیط مجازی بسازید و آن را فعال کنید:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # در ویندوز: venv\Scripts\activate
+   ```
+4. بسته‌های مورد نیاز را نصب کنید:
+   ```bash
+   pip install langgraph langchain-openai python-dotenv jupyter
+   ```
+5. یک فایل `.env` در ریشه پروژه بسازید و کلید API OpenAI خود را اضافه کنید:
+   ```
+   OPENAI_API_KEY=your_api_key_here
+   ```
+6. نوت‌بوک‌ها را در Jupyter باز کنید و دستورالعمل‌ها را دنبال کنید.
 
 ## پیش‌نیازها
 
 - پایتون ۳.۸ یا بالاتر
 - Jupyter Notebook یا JupyterLab
-- (توصیه می‌شود) بسته‌های LangGraph، OpenAI و سایر بسته‌های مرتبط با مدل‌های زبانی بزرگ
+- LangGraph
+- LangChain OpenAI
+- کلید API OpenAI (برای یکپارچگی با ChatGPT)
+- python-dotenv (برای متغیرهای محیطی)
 
 ## وضعیت
 
