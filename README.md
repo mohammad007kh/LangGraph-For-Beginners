@@ -5,8 +5,8 @@ Welcome to LangGraph for Beginners! This repository contains code samples and Ju
 ## Structure
 
 - `notebooks/` — Contains Jupyter notebooks for hands-on exercises and starter samples.
-    - `01_Notebook_FirstChatBot copy.ipynb` — Example notebook for building your first chatbot with LangGraph.
-    - `02_Notebook_MultipleBot copy.ipynb` — Example notebook demonstrating multiple operations and state management.
+    - `01_Notebook_FirstChatBot.ipynb` — Example notebook for building your first chatbot with LangGraph.
+    - `02_Notebook_MultipleBot.ipynb` — Example notebook demonstrating multiple operations and state management.
     - `03_Notebook_ConditionalEdge.ipynb` — Example notebook showing conditional edges and complex workflows.
 
 ## Getting Started
@@ -57,8 +57,8 @@ See the `LICENSE` file for details.
 ## ساختار
 
 - `notebooks/` — شامل نوت‌بوک‌های Jupyter برای تمرین‌های عملی و نمونه‌های مقدماتی است.
-    - `01_Notebook_FirstChatBot copy.ipynb` — نوت‌بوک نمونه برای ساخت اولین چت‌بات شما با LangGraph.
-    - `02_Notebook_MultipleBot copy.ipynb` — نوت‌بوک نمونه برای نشان دادن عملیات‌های چندگانه و مدیریت وضعیت.
+    - `01_Notebook_FirstChatBot.ipynb` — نوت‌بوک نمونه برای ساخت اولین چت‌بات شما با LangGraph.
+    - `02_Notebook_MultipleBot.ipynb` — نوت‌بوک نمونه برای نشان دادن عملیات‌های چندگانه و مدیریت وضعیت.
     - `03_Notebook_ConditionalEdge.ipynb` — نوت‌بوک نمونه برای نشان دادن یال‌های شرطی و جریان‌های کاری پیچیده.
 
 ## شروع کار
