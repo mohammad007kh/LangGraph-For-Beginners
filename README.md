@@ -4,10 +4,11 @@ Welcome to LangGraph for Beginners! This repository contains code samples and Ju
 
 ## Structure
 
-- `notebooks/` — Contains Jupyter notebooks for hands-on exercises and starter samples.
-    - `01_Notebook_FirstChatBot.ipynb` — Example notebook for building your first chatbot with LangGraph.
-    - `02_Notebook_MultipleBot.ipynb` — Example notebook demonstrating multiple operations and state management.
-    - `03_Notebook_ConditionalEdge.ipynb` — Example notebook showing conditional edges and complex workflows.
+- `notebooks/` — Contains Jupyter notebooks for hands-on exercises and tutorial examples.
+   - `01_Notebook_FirstChatBot.ipynb` — Build a minimal chatbot using LangGraph and an LLM (ChatOpenAI).
+   - `02_Notebook_MultipleBot.ipynb` — Demonstrates creating nodes that perform arithmetic operations and state-driven responses.
+   - `03_Notebook_ConditionalEdge.ipynb` — Shows conditional routing between nodes (e.g., gender-based body-fat calculation).
+   - `04_Notebook_Loop.ipynb` — Example of looping/iteration in a StateGraph (a number-guessing game with conditional continuation).
 
 ## Getting Started
 
@@ -56,10 +57,11 @@ See the `LICENSE` file for details.
 
 ## ساختار
 
-- `notebooks/` — شامل نوت‌بوک‌های Jupyter برای تمرین‌های عملی و نمونه‌های مقدماتی است.
-    - `01_Notebook_FirstChatBot.ipynb` — نوت‌بوک نمونه برای ساخت اولین چت‌بات شما با LangGraph.
-    - `02_Notebook_MultipleBot.ipynb` — نوت‌بوک نمونه برای نشان دادن عملیات‌های چندگانه و مدیریت وضعیت.
-    - `03_Notebook_ConditionalEdge.ipynb` — نوت‌بوک نمونه برای نشان دادن یال‌های شرطی و جریان‌های کاری پیچیده.
+- `notebooks/` — شامل نوت‌بوک‌های Jupyter برای تمرین‌های عملی و مثال‌های آموزشی است.
+   - `01_Notebook_FirstChatBot.ipynb` — ساخت یک چت‌بات ساده با LangGraph و LLM (ChatOpenAI).
+   - `02_Notebook_MultipleBot.ipynb` — نشان می‌دهد چگونه گره‌هایی بسازیم که عملیات حسابی و پاسخ مبتنی بر وضعیت را انجام می‌دهند.
+   - `03_Notebook_ConditionalEdge.ipynb` — نشان‌دهنده مسیردهی شرطی بین گره‌ها (مثلاً محاسبه درصد چربی بدن بر اساس جنسیت).
+   - `04_Notebook_Loop.ipynb` — مثال حلقه/تکرار در StateGraph (بازی حدس عدد با ادامه/پایان شرطی).
 
 ## شروع کار
 
