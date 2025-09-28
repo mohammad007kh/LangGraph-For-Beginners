@@ -45,7 +45,7 @@ node_modules/
 
 # Ignore environment and secrets
 .env
-.env.*
+!.env.example
 *.secret
 *.key
 *.pem

@@ -2,13 +2,18 @@
 
 Welcome to LangGraph for Beginners! This repository contains code samples and Jupyter notebooks designed to help you learn and experiment with LangGraph and LLM-powered workflows.
 
+
 ## Structure
 
-- `notebooks/` — Contains Jupyter notebooks for hands-on exercises and tutorial examples.
-   - `01_Notebook_FirstChatBot.ipynb` — Build a minimal chatbot using LangGraph and an LLM (ChatOpenAI).
-   - `02_Notebook_MultipleBot.ipynb` — Demonstrates creating nodes that perform arithmetic operations and state-driven responses.
-   - `03_Notebook_ConditionalEdge.ipynb` — Shows conditional routing between nodes (e.g., gender-based body-fat calculation).
-   - `04_Notebook_Loop.ipynb` — Example of looping/iteration in a StateGraph (a number-guessing game with conditional continuation).
+- `notebooks/` — Jupyter notebooks for hands-on exercises and tutorial examples.
+   - `01_Notebook_FirstChatBot.ipynb` — Minimal chatbot using LangGraph and ChatOpenAI.
+   - `02_Notebook_MultipleBot.ipynb` — Arithmetic and state-driven nodes.
+   - `03_Notebook_ConditionalEdge.ipynb` — Conditional routing example.
+   - `04_Notebook_Loop.ipynb` — Looping/iteration in StateGraph.
+   - `05_Notebook_SimpleChatBot.ipynb` — Another simple chatbot example.
+- `mini agents/` — Python scripts for agent demos.
+   - `05_SimpleChatBot.py` — Simple chatbot agent script.
+- `.env.example` — Example environment file. Copy to `.env` and add your OpenAI API key.
 
 ## Getting Started
 
@@ -23,9 +28,11 @@ Welcome to LangGraph for Beginners! This repository contains code samples and Ju
    ```bash
    pip install langgraph langchain-openai python-dotenv jupyter
    ```
-5. Create a `.env` file in the project root and add your OpenAI API key:
+5. Copy `.env.example` to `.env` and add your OpenAI API key:
    ```
-   OPENAI_API_KEY=your_api_key_here
+   cp .env.example .env
+   # Then edit .env and add your actual key
+   OPENAI_API_KEY=sk-...your-key-here...
    ```
 6. Open the notebooks in Jupyter and follow the instructions.
 
@@ -55,13 +62,18 @@ See the `LICENSE` file for details.
 
 به دوره "LangGraph برای مبتدیان" خوش آمدید! این مخزن شامل نمونه کدها و نوت‌بوک‌های Jupyter است که به شما کمک می‌کند با LangGraph و جریان‌های کاری مبتنی بر مدل‌های زبانی بزرگ (LLM) یاد بگیرید و آزمایش کنید.
 
+
 ## ساختار
 
-- `notebooks/` — شامل نوت‌بوک‌های Jupyter برای تمرین‌های عملی و مثال‌های آموزشی است.
-   - `01_Notebook_FirstChatBot.ipynb` — ساخت یک چت‌بات ساده با LangGraph و LLM (ChatOpenAI).
-   - `02_Notebook_MultipleBot.ipynb` — نشان می‌دهد چگونه گره‌هایی بسازیم که عملیات حسابی و پاسخ مبتنی بر وضعیت را انجام می‌دهند.
-   - `03_Notebook_ConditionalEdge.ipynb` — نشان‌دهنده مسیردهی شرطی بین گره‌ها (مثلاً محاسبه درصد چربی بدن بر اساس جنسیت).
-   - `04_Notebook_Loop.ipynb` — مثال حلقه/تکرار در StateGraph (بازی حدس عدد با ادامه/پایان شرطی).
+- `notebooks/` — نوت‌بوک‌های Jupyter برای تمرین‌های عملی و مثال‌های آموزشی.
+   - `01_Notebook_FirstChatBot.ipynb` — چت‌بات ساده با LangGraph و ChatOpenAI.
+   - `02_Notebook_MultipleBot.ipynb` — گره‌های حسابی و مبتنی بر وضعیت.
+   - `03_Notebook_ConditionalEdge.ipynb` — مثال مسیردهی شرطی.
+   - `04_Notebook_Loop.ipynb` — حلقه/تکرار در StateGraph.
+   - `05_Notebook_SimpleChatBot.ipynb` — یک چت‌بات ساده دیگر.
+- `mini agents/` — اسکریپت‌های پایتون برای دموهای ایجنت.
+   - `05_SimpleChatBot.py` — اسکریپت چت‌بات ساده.
+- `.env.example` — فایل نمونه متغیر محیطی. این فایل را به `.env` کپی کنید و کلید OpenAI خود را وارد کنید.
 
 ## شروع کار
 
@@ -76,9 +88,11 @@ See the `LICENSE` file for details.
    ```bash
    pip install langgraph langchain-openai python-dotenv jupyter
    ```
-5. یک فایل `.env` در ریشه پروژه بسازید و کلید API OpenAI خود را اضافه کنید:
+5. فایل `.env.example` را به `.env` کپی کنید و کلید OpenAI خود را وارد کنید:
    ```
-   OPENAI_API_KEY=your_api_key_here
+   cp .env.example .env
+   # سپس فایل .env را ویرایش کنید و کلید واقعی خود را وارد کنید
+   OPENAI_API_KEY=sk-...your-key-here...
    ```
 6. نوت‌بوک‌ها را در Jupyter باز کنید و دستورالعمل‌ها را دنبال کنید.
 
