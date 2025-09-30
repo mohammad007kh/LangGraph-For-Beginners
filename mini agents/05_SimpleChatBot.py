@@ -6,7 +6,6 @@ from langchain_openai import ChatOpenAI
 from langgraph.graph import StateGraph
 
 load_dotenv()
-os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 class State(TypedDict):
     messages: list[HumanMessage]

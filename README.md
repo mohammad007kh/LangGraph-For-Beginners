@@ -13,6 +13,8 @@ Welcome to LangGraph for Beginners! This repository contains code samples and Ju
    - `05_Notebook_SimpleChatBot.ipynb` — Another simple chatbot example.
 - `mini agents/` — Python scripts for agent demos.
    - `05_SimpleChatBot.py` — Simple chatbot agent script.
+   - `06_SimpleChatBotWithMemory.py` — Chatbot with in-memory conversation history.
+   - `07_SimpleChatBotWithPersistentMemory.py` — Chatbot with persistent memory (conversation history saved between runs).
 - `.env.example` — Example environment file. Copy to `.env` and add your OpenAI API key.
 
 ## Getting Started
@@ -73,6 +75,8 @@ See the `LICENSE` file for details.
    - `05_Notebook_SimpleChatBot.ipynb` — یک چت‌بات ساده دیگر.
 - `mini agents/` — اسکریپت‌های پایتون برای دموهای ایجنت.
    - `05_SimpleChatBot.py` — اسکریپت چت‌بات ساده.
+   - `06_SimpleChatBotWithMemory.py` — چت‌بات با حافظه موقت (درون حافظه).
+   - `07_SimpleChatBotWithPersistentMemory.py` — چت‌بات با حافظه پایدار (ذخیره تاریخچه گفتگو بین اجراها).
 - `.env.example` — فایل نمونه متغیر محیطی. این فایل را به `.env` کپی کنید و کلید OpenAI خود را وارد کنید.
 
 ## شروع کار
@@ -123,5 +127,5 @@ This repository is made with ❤️ LOVE.
 
 ---
 
-این مخزن با عشق ❤️ ساخته شده است.
+ بدانید و آگاه باشید که این ریپازیتوری با عشق ❤️ ساخته شده است.
 
