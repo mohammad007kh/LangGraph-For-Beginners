@@ -1,5 +1,7 @@
 # LangGraph for Beginners: Code Samples
 
+**[برای نسخه فارسی اینجا کلیک کنید](#نسخه-فارسی)**
+
 Welcome to LangGraph for Beginners! This repository contains code samples and Jupyter notebooks designed to help you learn and experiment with LangGraph and LLM-powered workflows.
 
 
@@ -15,6 +17,7 @@ Welcome to LangGraph for Beginners! This repository contains code samples and Ju
    - `05_SimpleChatBot.py` — Simple chatbot agent script.
    - `06_SimpleChatBotWithMemory.py` — Chatbot with in-memory conversation history.
    - `07_SimpleChatBotWithPersistentMemory.py` — Chatbot with persistent memory (conversation history saved between runs).
+   - `10_ReActAgents.py` — ReAct (Reasoning + Acting) agent with tools. Demonstrates how an LLM can use external tools (Wikipedia lookup and math calculator) to answer complex queries that require both factual information and computation.
 - `.env.example` — Example environment file. Copy to `.env` and add your OpenAI API key.
 
 ## Getting Started
@@ -28,7 +31,7 @@ Welcome to LangGraph for Beginners! This repository contains code samples and Ju
    ```
 4. Install required packages:
    ```bash
-   pip install langgraph langchain-openai python-dotenv jupyter
+   pip install langgraph langchain-openai python-dotenv jupyter requests
    ```
 5. Copy `.env.example` to `.env` and add your OpenAI API key:
    ```
@@ -77,6 +80,7 @@ See the `LICENSE` file for details.
    - `05_SimpleChatBot.py` — اسکریپت چت‌بات ساده.
    - `06_SimpleChatBotWithMemory.py` — چت‌بات با حافظه موقت (درون حافظه).
    - `07_SimpleChatBotWithPersistentMemory.py` — چت‌بات با حافظه پایدار (ذخیره تاریخچه گفتگو بین اجراها).
+   - `10_ReActAgents.py` — ایجنت ReAct (استدلال + عمل) با ابزارها. نشان می‌دهد که چگونه یک LLM می‌تواند از ابزارهای خارجی (جستجوی ویکی‌پدیا و ماشین‌حساب) برای پاسخ به سوالات پیچیده‌ای که نیاز به اطلاعات واقعی و محاسبه دارند، استفاده کند.
 - `.env.example` — فایل نمونه متغیر محیطی. این فایل را به `.env` کپی کنید و کلید OpenAI خود را وارد کنید.
 
 ## شروع کار
@@ -90,7 +94,7 @@ See the `LICENSE` file for details.
    ```
 4. بسته‌های مورد نیاز را نصب کنید:
    ```bash
-   pip install langgraph langchain-openai python-dotenv jupyter
+   pip install langgraph langchain-openai python-dotenv jupyter requests
    ```
 5. فایل `.env.example` را به `.env` کپی کنید و کلید OpenAI خود را وارد کنید:
    ```
