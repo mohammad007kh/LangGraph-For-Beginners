@@ -18,6 +18,7 @@ Welcome to LangGraph for Beginners! This repository contains code samples and Ju
    - `06_SimpleChatBotWithMemory.py` — Chatbot with in-memory conversation history.
    - `07_SimpleChatBotWithPersistentMemory.py` — Chatbot with persistent memory (conversation history saved between runs).
    - `10_ReActAgents.py` — ReAct (Reasoning + Acting) agent with tools. Demonstrates how an LLM can use external tools (Wikipedia lookup and math calculator) to answer complex queries that require both factual information and computation.
+   - `11_HumanAICollaborationDrafting.py` — Interactive drafting agent demonstrating human-in-the-loop draft creation, iterative refinement, and saving draft versions to JSON.
 - `.env.example` — Example environment file. Copy to `.env` and add your OpenAI API key.
 
 ## Getting Started
@@ -81,6 +82,7 @@ See the `LICENSE` file for details.
    - `06_SimpleChatBotWithMemory.py` — چت‌بات با حافظه موقت (درون حافظه).
    - `07_SimpleChatBotWithPersistentMemory.py` — چت‌بات با حافظه پایدار (ذخیره تاریخچه گفتگو بین اجراها).
    - `10_ReActAgents.py` — ایجنت ReAct (استدلال + عمل) با ابزارها. نشان می‌دهد که چگونه یک LLM می‌تواند از ابزارهای خارجی (جستجوی ویکی‌پدیا و ماشین‌حساب) برای پاسخ به سوالات پیچیده‌ای که نیاز به اطلاعات واقعی و محاسبه دارند، استفاده کند.
+   - `11_HumanAICollaborationDrafting.py` — عامل تعاملی پیش‌نویس که نمونه‌ای از گردش کار انسان در حلقه (HITL) برای ایجاد، اصلاح و ذخیره نسخه‌های پیش‌نویس را نشان می‌دهد.
 - `.env.example` — فایل نمونه متغیر محیطی. این فایل را به `.env` کپی کنید و کلید OpenAI خود را وارد کنید.
 
 ## شروع کار
