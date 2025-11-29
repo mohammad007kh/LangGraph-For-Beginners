@@ -14,6 +14,10 @@ venv/
 ENV/
 env/
 
+# Ignore all PDF files (case-sensitive)
+*.pdf
+*.PDF
+
 # Jupyter Notebooks
 .ipynb_checkpoints/
 *.ipynb_checkpoints

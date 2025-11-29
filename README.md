@@ -13,12 +13,13 @@ Welcome to LangGraph for Beginners! This repository contains code samples and Ju
    - `03_Notebook_ConditionalEdge.ipynb` — Conditional routing example.
    - `04_Notebook_Loop.ipynb` — Looping/iteration in StateGraph.
    - `05_Notebook_SimpleChatBot.ipynb` — Another simple chatbot example.
-- `mini agents/` — Python scripts for agent demos.
-   - `05_SimpleChatBot.py` — Simple chatbot agent script.
+ - `mini agents/` — Python scripts for agent demos.
+    - `05_SimpleChatBot.py` — Simple chatbot agent script.
    - `06_SimpleChatBotWithMemory.py` — Chatbot with in-memory conversation history.
    - `07_SimpleChatBotWithPersistentMemory.py` — Chatbot with persistent memory (conversation history saved between runs).
    - `10_ReActAgents.py` — ReAct (Reasoning + Acting) agent with tools. Demonstrates how an LLM can use external tools (Wikipedia lookup and math calculator) to answer complex queries that require both factual information and computation.
    - `11_HumanAICollaborationDrafting.py` — Interactive drafting agent demonstrating human-in-the-loop draft creation, iterative refinement, and saving draft versions to JSON.
+   - `12_ragAgent.py` — Retrieval-Augmented Generation (RAG) agent. The script expects a local PDF in a folder named `RagFiles`; you can change the folder or file name in the script to suit your setup.
 - `.env.example` — Example environment file. Copy to `.env` and add your OpenAI API key.
 
 ## Getting Started
@@ -83,6 +84,7 @@ See the `LICENSE` file for details.
    - `07_SimpleChatBotWithPersistentMemory.py` — چت‌بات با حافظه پایدار (ذخیره تاریخچه گفتگو بین اجراها).
    - `10_ReActAgents.py` — ایجنت ReAct (استدلال + عمل) با ابزارها. نشان می‌دهد که چگونه یک LLM می‌تواند از ابزارهای خارجی (جستجوی ویکی‌پدیا و ماشین‌حساب) برای پاسخ به سوالات پیچیده‌ای که نیاز به اطلاعات واقعی و محاسبه دارند، استفاده کند.
    - `11_HumanAICollaborationDrafting.py` — عامل تعاملی پیش‌نویس که نمونه‌ای از گردش کار انسان در حلقه (HITL) برای ایجاد، اصلاح و ذخیره نسخه‌های پیش‌نویس را نشان می‌دهد.
+   - `12_ragAgent.py` — عامل RAG (Retrieval-Augmented Generation). اسکریپت یک PDF محلی را از پوشه‌ای به نام `RagFiles` می‌خواند؛ می‌توانید نام پوشه یا فایل را در اسکریپت تغییر دهید.
 - `.env.example` — فایل نمونه متغیر محیطی. این فایل را به `.env` کپی کنید و کلید OpenAI خود را وارد کنید.
 
 ## شروع کار
