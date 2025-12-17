@@ -1,0 +1,63 @@
+# Root .gitignore for LangGraph Text Editor
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Next.js build outputs
+.next/
+out/
+build/
+
+# Production
+dist/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+
+# Runtime data
+/pids
+*.pid
+*.seed
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# TypeScript
+*.tsbuildinfo
+
+# Coverage
+coverage/
+
+# Prisma local DB
+/prisma/dev.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Misc
+.cache/
+.vscode-test/
+
+# Ignore generated frontend/backend local artifacts
+/frontend/.next/
+/backend/dist/
+
+# Ignore project documentation folder (requested)
+/project-docs/
