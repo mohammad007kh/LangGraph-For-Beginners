@@ -20,6 +20,8 @@ Welcome to LangGraph for Beginners! This repository contains code samples and Ju
    - `10_ReActAgents.py` — ReAct (Reasoning + Acting) agent with tools. Demonstrates how an LLM can use external tools (Wikipedia lookup and math calculator) to answer complex queries that require both factual information and computation.
    - `11_HumanAICollaborationDrafting.py` — Interactive drafting agent demonstrating human-in-the-loop draft creation, iterative refinement, and saving draft versions to JSON.
    - `12_ragAgent.py` — Retrieval-Augmented Generation (RAG) agent. The script expects a local PDF in a folder named `RagFiles`; you can change the folder or file name in the script to suit your setup.
+- `mini apps/` — Small example applications demonstrating full-stack usage and integrations.
+   - `AgentEditor/` — A small full-stack example with a Node/TypeScript backend (Prisma DB + API routes and tools) and a Next.js frontend (chat UI and editor). See `mini apps/AgentEditor/README.md` for setup and running instructions.
 - `.env.example` — Example environment file. Copy to `.env` and add your OpenAI API key.
 
 ## Getting Started
@@ -85,6 +87,8 @@ See the `LICENSE` file for details.
    - `10_ReActAgents.py` — ایجنت ReAct (استدلال + عمل) با ابزارها. نشان می‌دهد که چگونه یک LLM می‌تواند از ابزارهای خارجی (جستجوی ویکی‌پدیا و ماشین‌حساب) برای پاسخ به سوالات پیچیده‌ای که نیاز به اطلاعات واقعی و محاسبه دارند، استفاده کند.
    - `11_HumanAICollaborationDrafting.py` — عامل تعاملی پیش‌نویس که نمونه‌ای از گردش کار انسان در حلقه (HITL) برای ایجاد، اصلاح و ذخیره نسخه‌های پیش‌نویس را نشان می‌دهد.
    - `12_ragAgent.py` — عامل RAG (Retrieval-Augmented Generation). اسکریپت یک PDF محلی را از پوشه‌ای به نام `RagFiles` می‌خواند؛ می‌توانید نام پوشه یا فایل را در اسکریپت تغییر دهید.
+- `mini apps/` — نمونه‌های اپلیکیشن کوچک برای نمایش نمونه‌های full-stack و یکپارچه‌سازی‌ها.
+   - `AgentEditor/` — یک مثال full-stack با بک‌اند Node/TypeScript (Prisma DB + API routes و ابزارها) و فرانت‌اند Next.js (رابط چت و ویرایشگر). توضیحات راه‌اندازی در `mini apps/AgentEditor/README.md` موجود است.
 - `.env.example` — فایل نمونه متغیر محیطی. این فایل را به `.env` کپی کنید و کلید OpenAI خود را وارد کنید.
 
 ## شروع کار
