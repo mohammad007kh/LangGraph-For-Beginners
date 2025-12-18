@@ -13,8 +13,8 @@ Welcome to LangGraph for Beginners! This repository contains code samples and Ju
    - `03_Notebook_ConditionalEdge.ipynb` — Conditional routing example.
    - `04_Notebook_Loop.ipynb` — Looping/iteration in StateGraph.
    - `05_Notebook_SimpleChatBot.ipynb` — Another simple chatbot example.
- - `mini agents/` — Python scripts for agent demos.
-    - `05_SimpleChatBot.py` — Simple chatbot agent script.
+- `mini agents/` — Python scripts for agent demos.
+   - `05_SimpleChatBot.py` — Simple chatbot agent script.
    - `06_SimpleChatBotWithMemory.py` — Chatbot with in-memory conversation history.
    - `07_SimpleChatBotWithPersistentMemory.py` — Chatbot with persistent memory (conversation history saved between runs).
    - `10_ReActAgents.py` — ReAct (Reasoning + Acting) agent with tools. Demonstrates how an LLM can use external tools (Wikipedia lookup and math calculator) to answer complex queries that require both factual information and computation.
@@ -29,20 +29,20 @@ Welcome to LangGraph for Beginners! This repository contains code samples and Ju
 1. Clone this repository.
 2. Install Python 3.8+ and Jupyter.
 3. Create a virtual environment and activate it:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 4. Install required packages:
-   ```bash
-   pip install langgraph langchain-openai python-dotenv jupyter requests
-   ```
+```bash
+pip install langgraph langchain-openai python-dotenv jupyter requests
+```
 5. Copy `.env.example` to `.env` and add your OpenAI API key:
-   ```
-   cp .env.example .env
-   # Then edit .env and add your actual key
-   OPENAI_API_KEY=sk-...your-key-here...
-   ```
+```
+cp .env.example .env
+# Then edit .env and add your actual key
+OPENAI_API_KEY=sk-...your-key-here...
+```
 6. Open the notebooks in Jupyter and follow the instructions.
 
 ## Requirements
@@ -65,7 +65,10 @@ Pull requests and suggestions are welcome. If you find issues or have ideas for 
 ## License
 
 See the `LICENSE` file for details.
+
 ---
+
+<div dir="rtl" style="text-align: right; direction: rtl">
 
 # نسخه فارسی
 
@@ -74,42 +77,42 @@ See the `LICENSE` file for details.
 
 ## ساختار
 
-- `notebooks/` — نوت‌بوک‌های Jupyter برای تمرین‌های عملی و مثال‌های آموزشی.
-   - `01_Notebook_FirstChatBot.ipynb` — چت‌بات ساده با LangGraph و ChatOpenAI.
-   - `02_Notebook_MultipleBot.ipynb` — گره‌های حسابی و مبتنی بر وضعیت.
-   - `03_Notebook_ConditionalEdge.ipynb` — مثال مسیردهی شرطی.
-   - `04_Notebook_Loop.ipynb` — حلقه/تکرار در StateGraph.
-   - `05_Notebook_SimpleChatBot.ipynb` — یک چت‌بات ساده دیگر.
-- `mini agents/` — اسکریپت‌های پایتون برای دموهای ایجنت.
-   - `05_SimpleChatBot.py` — اسکریپت چت‌بات ساده.
-   - `06_SimpleChatBotWithMemory.py` — چت‌بات با حافظه موقت (درون حافظه).
-   - `07_SimpleChatBotWithPersistentMemory.py` — چت‌بات با حافظه پایدار (ذخیره تاریخچه گفتگو بین اجراها).
-   - `10_ReActAgents.py` — ایجنت ReAct (استدلال + عمل) با ابزارها. نشان می‌دهد که چگونه یک LLM می‌تواند از ابزارهای خارجی (جستجوی ویکی‌پدیا و ماشین‌حساب) برای پاسخ به سوالات پیچیده‌ای که نیاز به اطلاعات واقعی و محاسبه دارند، استفاده کند.
-   - `11_HumanAICollaborationDrafting.py` — عامل تعاملی پیش‌نویس که نمونه‌ای از گردش کار انسان در حلقه (HITL) برای ایجاد، اصلاح و ذخیره نسخه‌های پیش‌نویس را نشان می‌دهد.
-   - `12_ragAgent.py` — عامل RAG (Retrieval-Augmented Generation). اسکریپت یک PDF محلی را از پوشه‌ای به نام `RagFiles` می‌خواند؛ می‌توانید نام پوشه یا فایل را در اسکریپت تغییر دهید.
-- `mini apps/` — نمونه‌های اپلیکیشن کوچک برای نمایش نمونه‌های full-stack و یکپارچه‌سازی‌ها.
-   - `AgentEditor/` — یک مثال full-stack با بک‌اند Node/TypeScript (Prisma DB + API routes و ابزارها) و فرانت‌اند Next.js (رابط چت و ویرایشگر). توضیحات راه‌اندازی در `mini apps/AgentEditor/README.md` موجود است.
-- `.env.example` — فایل نمونه متغیر محیطی. این فایل را به `.env` کپی کنید و کلید OpenAI خود را وارد کنید.
+- فولدر `notebooks/` — نوت‌بوک‌های Jupyter برای تمرین‌های عملی و مثال‌های آموزشی.
+   - فایل `01_Notebook_FirstChatBot.ipynb` — چت‌بات ساده با LangGraph و ChatOpenAI.
+   - فایل `02_Notebook_MultipleBot.ipynb` — گره‌های حسابی و مبتنی بر وضعیت.
+   - فایل `03_Notebook_ConditionalEdge.ipynb` — مثال مسیردهی شرطی.
+   - فایل `04_Notebook_Loop.ipynb` — حلقه/تکرار در StateGraph.
+   - فایل `05_Notebook_SimpleChatBot.ipynb` — یک چت‌بات ساده دیگر.
+- فولدر `mini agents/` — اسکریپت‌های پایتون برای دموهای ایجنت.
+   - فایل `05_SimpleChatBot.py` — اسکریپت چت‌بات ساده.
+   - فایل `06_SimpleChatBotWithMemory.py` — چت‌بات با حافظه موقت (درون حافظه).
+   - فایل `07_SimpleChatBotWithPersistentMemory.py` — چت‌بات با حافظه پایدار (ذخیره تاریخچه گفتگو بین اجراها).
+   - فایل `10_ReActAgents.py` — ایجنت ReAct (استدلال + عمل) با ابزارها. نشان می‌دهد که چگونه یک LLM می‌تواند از ابزارهای خارجی (جستجوی ویکی‌پدیا و ماشین‌حساب) برای پاسخ به سوالات پیچیده‌ای که نیاز به اطلاعات واقعی و محاسبه دارند، استفاده کند.
+   - فایل `11_HumanAICollaborationDrafting.py` — عامل تعاملی پیش‌نویس که نمونه‌ای از گردش کار انسان در حلقه (HITL) برای ایجاد، اصلاح و ذخیره نسخه‌های پیش‌نویس را نشان می‌دهد.
+   - فایل `12_ragAgent.py` — عامل RAG (Retrieval-Augmented Generation). اسکریپت یک PDF محلی را از پوشه‌ای به نام `RagFiles` می‌خواند؛ می‌توانید نام پوشه یا فایل را در اسکریپت تغییر دهید.
+- فولدر `mini apps/` — نمونه‌های اپلیکیشن کوچک برای نمایش نمونه‌های full-stack و یکپارچه‌سازی‌ها.
+   - فولدر `AgentEditor/` — یک مثال full-stack با بک‌اند Node/TypeScript (Prisma DB + API routes و ابزارها) و فرانت‌اند Next.js (رابط چت و ویرایشگر). توضیحات راه‌اندازی در `mini apps/AgentEditor/README.md` موجود است.
+- فایل `.env.example` — فایل نمونه متغیر محیطی. این فایل را به `.env` کپی کنید و کلید OpenAI خود را وارد کنید.
 
 ## شروع کار
 
 1. این مخزن را کلون کنید.
 2. پایتون ۳.۸ یا بالاتر و Jupyter را نصب کنید.
 3. یک محیط مجازی بسازید و آن را فعال کنید:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # در ویندوز: venv\Scripts\activate
-   ```
+```bash
+python -m venv venv
+source venv/bin/activate  # در ویندوز: venv\\Scripts\\activate
+```
 4. بسته‌های مورد نیاز را نصب کنید:
-   ```bash
-   pip install langgraph langchain-openai python-dotenv jupyter requests
-   ```
+```bash
+pip install langgraph langchain-openai python-dotenv jupyter requests
+```
 5. فایل `.env.example` را به `.env` کپی کنید و کلید OpenAI خود را وارد کنید:
-   ```
-   cp .env.example .env
-   # سپس فایل .env را ویرایش کنید و کلید واقعی خود را وارد کنید
-   OPENAI_API_KEY=sk-...your-key-here...
-   ```
+```
+cp .env.example .env
+# سپس فایل .env را ویرایش کنید و کلید واقعی خود را وارد کنید
+OPENAI_API_KEY=sk-...your-key-here...
+```
 6. نوت‌بوک‌ها را در Jupyter باز کنید و دستورالعمل‌ها را دنبال کنید.
 
 ## پیش‌نیازها
@@ -133,6 +136,8 @@ See the `LICENSE` file for details.
 
 برای جزئیات بیشتر به فایل `LICENSE` مراجعه کنید.
 
+</div>
+
 ---
 
 This repository is made with ❤️ LOVE.
@@ -140,4 +145,3 @@ This repository is made with ❤️ LOVE.
 ---
 
  بدانید و آگاه باشید که این ریپازیتوری با عشق ❤️ ساخته شده است.
-
