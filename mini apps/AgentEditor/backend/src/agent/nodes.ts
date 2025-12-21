@@ -28,10 +28,13 @@ IMPORTANT RULES:
 - "update_text" ONLY if user asks to modify existing text AND there is text in editor
 - Use "research" for factual questions about topics
 - Use "calculate" for math problems
+- Use "get_date" for questions about current date/time
+
+Always
 
 Respond with JSON:
 {
-  "intent": "create_text" | "update_text" | "ask_question" | "research" | "calculate",
+  "intent": "create_text" | "update_text" | "ask_question" | "research" | "calculate" | "get_date",
   "needsText": boolean,
   "description": "brief description of what user wants"
 }`
@@ -73,7 +76,9 @@ export async function selectTools(state: State): Promise<Partial<State>> {
   // Based on intent, select tools
   const lastMessage = state.messages[state.messages.length - 1]?.content.toLowerCase() || ''
   const isGreeting = /^(hi|hello|hey|greetings|good morning|good afternoon|good evening|howdy|what's up|sup)\b/i.test(lastMessage.trim())
-  
+  // Broader date/time detection: handles "today's date", "tell today's date", "what is the date", etc.
+  const isDateQuery = /(today(?:'s)?\s+date|tell(?: me)?(?: what(?:'s|\s+is)?\s+the\s+date)?|what(?:'s|\s+is)?\s+the\s+date|what\s+date|current\s+date|time\s+is\s+it|what\s+time|date_tool|date-tool)/i.test(lastMessage)
+
   switch (state.userIntent) {
     case 'create_text':
       // Extra safeguard: don't generate text for simple greetings
@@ -93,8 +98,14 @@ export async function selectTools(state: State): Promise<Partial<State>> {
     case 'calculate':
       toolsToUse.push(toolNames.CALCULATOR)
       break
+    case 'get_date':
+      toolsToUse.push(toolNames.GET_DATE)
+      break
   }
   
+  if (isDateQuery) {
+    toolsToUse.push(toolNames.GET_DATE)
+  }
   return {
     toolsToUse
   }
@@ -172,6 +183,11 @@ export async function executeTools(state: State): Promise<Partial<State>> {
           })
           toolResults[toolName] = result
           break
+
+          case toolNames.GET_DATE:
+          result = await tools.GET_DATE.execute({})
+          toolResults[toolName] = result
+          break
       }
     } catch (error) {
       toolResults[toolName] = {
@@ -211,6 +227,7 @@ IMPORTANT RULES:
 2. DO NOT include the generated text content in your response
 3. Only describe what you did or provide information requested
 4. If text was generated, just mention it was created/updated - don't show the text itself
+5. If a tool returned a direct answer to the user's request (for example the date/time or a calculation result), include that answer verbatim in one short sentence.
 
 Examples:
 - "I've generated a 250-word letter for you."
@@ -221,7 +238,7 @@ Examples:
 Response:`
 
   const response = await llm.invoke([
-    { role: 'system', content: 'You are a helpful writing assistant. Be VERY concise. Never include generated text in your messages - that goes in the editor panel.' },
+    { role: 'system', content: 'You are a helpful writing assistant. Be VERY concise. If tools returned a direct answer requested by the user (for example a date, time, or calculation result), include that answer verbatim in your response. Do NOT include large generated editor content; that should remain in the editor panel.' },
     { role: 'user', content: responsePrompt }
   ])
 

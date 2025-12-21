@@ -3,6 +3,7 @@ import { ReadTextTool, WriteTextTool, UpdateTextTool } from './text-tools.js'
 import { WikipediaSearchTool } from './research-tools.js'
 import { CalculatorTool } from './calc-tools.js'
 import { ConversationMemoryTool } from './memory-tools.js'
+import { GetDateTool } from './date-tool.js'
 
 // Create tool instances
 export const tools = {
@@ -11,8 +12,10 @@ export const tools = {
   updateText: new UpdateTextTool(),
   wikipediaSearch: new WikipediaSearchTool(),
   calculator: new CalculatorTool(),
-  conversationMemory: new ConversationMemoryTool()
+  conversationMemory: new ConversationMemoryTool(),
+  GET_DATE: new GetDateTool()
 };
+
 
 // Array of all tools for easy iteration
 export const allTools = Object.values(tools)
@@ -24,5 +27,6 @@ export const toolNames = {
   UPDATE_TEXT: 'update_text',
   WIKIPEDIA_SEARCH: 'wikipedia_search',
   CALCULATOR: 'calculator',
-  CONVERSATION_MEMORY: 'conversation_memory'
+  CONVERSATION_MEMORY: 'conversation_memory',
+  GET_DATE: 'get_date'
 }
